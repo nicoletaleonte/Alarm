@@ -21,6 +21,7 @@
         </activity>
 
         <receiver android:name=".AlertReceiver" />
+        <receiver android:name=".StopReceiver" />
 
     </application>
 

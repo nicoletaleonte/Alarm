@@ -11,6 +11,6 @@ public class StopReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
-        // do your code here...
+      mediaPlayer.stop();
     }
 }
