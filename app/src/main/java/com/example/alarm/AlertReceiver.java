@@ -6,11 +6,15 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.provider.Settings;
 
-public class MyAlarm extends BroadcastReceiver {
+
+public class AlertReceiver extends BroadcastReceiver {
+
+    MediaPlayer mediaPlayer;
     @Override
     public void onReceive(Context context, Intent intent) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(context,
-                Settings.System.DEFAULT_RINGTONE_URI);
+        mediaPlayer = MediaPlayer.create(context,
+                Settings.System.DEFAULT_ALARM_ALERT_URI);
         mediaPlayer.start();
     }
+
 }
